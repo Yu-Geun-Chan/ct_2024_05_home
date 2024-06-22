@@ -1,4 +1,4 @@
-package com.ki.level0.p120814;
+package com.ki.level0.p120899;
 
 
 import org.junit.jupiter.api.DisplayName;
@@ -9,7 +9,8 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class Tests {
 
     @Test
-    @DisplayName("2랑 3을 넣으면 -1이 나와야해")
+    @DisplayName("[1, 8, 3] => [8, 1]")
+    int[] a = {1, 8, 3};
     void t1() {
         assertThat(new Solution().solution(2, 3)).isEqualTo(-1);
     }
@@ -26,3 +27,4 @@ public class Tests {
         assertThat(new Solution().solution(7, 99)).isEqualTo(-1);
     }
 }
+

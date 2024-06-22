@@ -13,7 +13,8 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class Tests {
 
     @Test
-    @DisplayName("2랑 3을 넣으면 -1이 나와야해")
+    @DisplayName("2, 3 => 1")
+    int[] a =
     void t1() {
         assertThat(new Solution().solution(2, 3)).isEqualTo(-1);
     }
