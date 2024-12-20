@@ -13,20 +13,14 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class Tests {
 
     @Test
-    @DisplayName("2랑 3을 넣으면 -1이 나와야해")
+    @DisplayName("10")
     void t1() {
-        assertThat(new Solution().solution(2, 3)).isEqualTo(-1);
+        assertThat(new Solution().solution(10)).isEqualTo(new int[]{1, 3, 5, 7, 9});
     }
 
     @Test
-    @DisplayName("11, 11 => 1")
+    @DisplayName("15")
     void t2() {
-        assertThat(new Solution().solution(11, 11)).isEqualTo(1);
-    }
-
-    @Test
-    @DisplayName("7, 99 => -1")
-    void t3() {
-        assertThat(new Solution().solution(7, 99)).isEqualTo(-1);
+        assertThat(new Solution().solution(10)).isEqualTo(new int[]{1, 3, 5, 7, 9, 11, 13, 15});
     }
 }

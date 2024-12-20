@@ -8,23 +8,15 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class Tests {
 
-    @Test
-    @DisplayName("[1, 8, 3] => [8, 1]")
     int[] a = {1, 8, 3};
     void t1() {
-        assertThat(new Solution().solution(2, 3)).isEqualTo(-1);
+        assertThat(new Solution().solution(a)).isEqualTo((new int[]{8, 1}));
     }
 
     @Test
-    @DisplayName("11, 11 => 1")
+    @DisplayName("[9, 10, 11, 8] => [11, 2]")
     void t2() {
-        assertThat(new Solution().solution(11, 11)).isEqualTo(1);
-    }
-
-    @Test
-    @DisplayName("7, 99 => -1")
-    void t3() {
-        assertThat(new Solution().solution(7, 99)).isEqualTo(-1);
+        assertThat(new Solution().solution(new int[]{9, 10, 11, 8})).isEqualTo((new int[]{11, 2}));
     }
 }
 

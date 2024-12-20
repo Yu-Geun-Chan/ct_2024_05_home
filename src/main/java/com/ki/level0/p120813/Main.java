@@ -10,8 +10,13 @@ public class Main {
 
 class Solution {
     public int[] solution(int n) {
-        int[] answer = {};
-        return answer;
+        int[] array = new int[(n + 1) / 2];
+        int a = 1;
+        for (int i = 0; i < array.length; i++) {
+            array[i] = a;
+            a += 2;
+        }
+        return array;
     }
 }
 
